@@ -1,4 +1,4 @@
-#Comment: Sales
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
 [Customer]1 o-> 0..*[Order]
 [Order]* +-> *[LineItem]
 [Order]-> 1[DeliveryMethod]
@@ -6,4 +6,4 @@
 [Category]<->[Product]
 [DeliveryMethod]<:-[National]
 [DeliveryMethod]<:-[International]
-[<note> You can stick notes on diagrams too!]
+[<note> Sales w/delivery]
