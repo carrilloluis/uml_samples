@@ -1,3 +1,4 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
 #bgColor: white
 [Customer|name:String; address:String; gender:String |]
 [Book|title:String; published:Date; numberPages:Integer |]-[Publisher]
