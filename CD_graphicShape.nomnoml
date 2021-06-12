@@ -1,0 +1,8 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#bgColor: white
+[Graphic {Abstract}||+paint():void]0..* <-o 0..1[ImageGroup|-size:int|«Override» +paint():void]
+[Graphic {Abstract}]<:-[ImageGroup]
+[Graphic {Abstract}]<:-[Circle|-radius:float|«Override» +paint():void]
+#Comment: Square
+[Graphic {Abstract}]<:-[Quadrate|-side:float|«Override» +paint():void]
+[Graphic {Abstract}]<:-[Triangle|-base:float;-height:float|«Override» +paint():void]
