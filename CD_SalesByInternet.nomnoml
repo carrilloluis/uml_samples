@@ -1,0 +1,9 @@
+#Comment: Sales
+[Customer]1 o-> 0..*[Order]
+[Order]* +-> *[LineItem]
+[Order]-> 1[DeliveryMethod]
+[Order]* -> *[Product|EAN_Code|promo_price()]
+[Category]<->[Product]
+[DeliveryMethod]<:-[National]
+[DeliveryMethod]<:-[International]
+[<note> You can stick notes on diagrams too!]
