@@ -1,0 +1,6 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#bgColor: White
+[Person]<:-[Client]
+#Comment: Basic Inheritance (Herencia [es_PE])
+[Person]<:-[Employee]
+[Person]<:-[Seller]

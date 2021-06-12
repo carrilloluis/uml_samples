@@ -1,0 +1,7 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#Comment: Basic Aggregation (Agregación [es_PE])
+#bgColor: White
+[PersonalComputer]o-[Keyboard]
+[PersonalComputer]o-[Case]
+[PersonalComputer]o-[Monitor]
+[PersonalComputer]o-[Mouse]
