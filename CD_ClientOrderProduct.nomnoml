@@ -1,0 +1,6 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[Client]1 o-> *[Order]
+[Order]-> 0..1[PaymentMethod]
+#Comment: [Order] -> items [Product]
+[Order]1 +-> items *[Product]

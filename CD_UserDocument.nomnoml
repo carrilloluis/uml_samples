@@ -1,0 +1,10 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+[User||+mkQuery();+request();+readMsg()]
+[System||processRequest()]
+[Index|name:String|showIndex();clearEntry();addEntry()]
+[Document|name:String|classify();recover();save();destroyDoc()]
+[User]<-[System]
+[User]->[System]
+[System]->[Document]
+[System]->[Index]
+[Index]->[Document]

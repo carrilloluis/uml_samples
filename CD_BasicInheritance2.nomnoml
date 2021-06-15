@@ -1,0 +1,7 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#Commment: Inheritance/Generalization "is a"
+[Base] <:- extends [Derived]
+#Comment: YUM notation : [Wages]^-[Salaried], [Wages]^-[Contractor]
+[Wages]<:-[Salaried]
+[Wages]<:-[Contractor]
+[Fixed Account]<:-[Bank Account]

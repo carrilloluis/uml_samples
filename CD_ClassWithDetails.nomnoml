@@ -1,0 +1,4 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: Class with Details
+# YUM notation :  [User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()]
+[User|+foreName:String;+surName:String;+hashedPassword:String;-salt:String|+login();+logout()]
