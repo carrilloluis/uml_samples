@@ -1,0 +1,9 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[Customer|name:String;address:String;gender:Gender|]0..* -[<hidden> P]
+[<hidden> P]- 0..*[Book|title:String;published:Date;numberPages:int|]
+#Comment: [Book] PublishedBy [Publisher]
+[Book]0..* - 1[Publisher|name:String|]
+[<hidden> P]--[Recommends|review:String|]
+#Comment: <<enumeration>> Gender
+#Comment: [<hidden> «enumeration» Gender|+gender():{man/woman}|]

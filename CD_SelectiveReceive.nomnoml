@@ -1,0 +1,13 @@
+#direction: right
+#Comment: __author__ = LuisCarrilloGutiérrez
+[Selectable||+guard()]<:-[Channel||+send(o:Object);+receive():Object]
+#Comment: MsgGate change/selects to one Channel
+[Channel]<-o[MsgGate||+run()]
+[MsgGate]<-o[MsgCarPack||+run()]
+[MsgGate]<-o[MsgCarPack]
+#Comment: MsgCarPack selects one Select
+[Select||+add(s:Selectable);+choose():int]<-o[MsgCarPack]
+#Comment: <<implements>>
+[MsgCarPack]->[Runnable||]
+#Comment: <<implements>>
+[MsgGate]->[Runnable]
