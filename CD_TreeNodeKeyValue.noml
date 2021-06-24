@@ -1,0 +1,22 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Tree|*root:Node=NULL|+find(k:Key):Value;+add(k:Key,v:Value)]
+[Node|*k:Key=NULL;*v:Value=NULL;*left:Node=NULL;*right:Node=NULL|]
+[Key||+isEqual(k:Key):Bool;+isLessThan(k:Key):Bool]
+#Comment: Value &VALUE::value() { return *this; }
+[Value||+value():Value]
+[PersonKey|*p:Person=NULL|+value()]
+#Comment: Para comparar i.e. en el caso de C++
+[StringKey|*s:String=""|+value():string]
+[PersonValue|*p:Person=NULL|]
+[StringValue|*s:String=""|]
+[Tree]1+->0..*[Node]
+[Node]o-[Key]
+[Node]o-[Value]
+[<hidden> P]
+[Key]<:-[<hidden> P]
+[<hidden> P]-[PersonKey]
+[<hidden> P]-[StringKey]
+[Value]<:-[<hidden> O]
+[<hidden> O]-[PersonValue]
+[<hidden> O]-[StringValue]
+#Comment: Bool StringKey::isEqual(Key &KEY) { StringKey &stk = dynamic_cast<StringKey> &(KEY); if(stk.value() == s) { return true; } return false; }

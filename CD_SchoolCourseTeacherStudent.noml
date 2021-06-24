@@ -1,0 +1,13 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#bgColor: white
+[School|name:String;tuition:float;foundationDate:Date]
+[Course|title:String;roomAssigment:String;textBook:String;courseLevel:int|registerStudent(s:Student):boolean;+getHonorStudents():Student(0..*)]
+[Teacher|name:String;salary:float]
+[Student|GPA:float;dateOfBirth:Date;yearOfGraduation:int;tuitionPaid:boolean]
+[School]- 1..* [Course]
+#Comment: [Course] - N courses dictate by 1 [Instructor]
+[Course]1..* -> 1[Teacher]
+#Comment: 1 Course needs @ least 5 students to start
+[Course]-> 5..*[Student]
+#Comment: pre-Requisites
+[Course]-> 0..*[Course]

@@ -1,0 +1,12 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+[ «control» Tracer||]- 1[State||+action():void]
+[State]<:-[<hidden> P]
+[<hidden> P]-[Idle||]
+[<hidden> P]-[OnCourse||]
+[<hidden> P]-[OutOfCourse||]
+[ «control» Tracer]-> 1[Engine|+forward():void;+backward():void;+brake():void|]
+[ «control» Tracer]-> 1[Steering|+right():void;+left():void;+fix():void|]
+[ «control» Tracer]-> 1[Monitor| -Threshold:boolean|+isBlack():void;+isWhite():void]
+[Engine]+-> 1[ «boundary» Motor||]
+[Steering]+-> 1[ «boundary» Motor]
+[Monitor]+-> 1[ «boundary» LightSensor||]

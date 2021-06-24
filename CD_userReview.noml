@@ -1,0 +1,9 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: Title: review model -- Date: 2014.05.03
+[«Table» Review|«PK» id:Identifier;«Version»version:Integer;title:String;site:String;createDate:DateTime;text:String;allowComments:Boolean|]
+[«Table» AWA::Users::Models::User|firstName:String;lastName:String;password:String;openId:String;country:String;name:String;«PK» id:Identifier;«Version»version:Integer]
+[«Bean» ReviewBean||save(outCome:String);delete(outCome:String)|]
+#Comment: [Review] - reviewer/reviewed by - [user]
+[«Table» Review]0..* -> 1[«Table» AWA::Users::Models::User]
+[«Table» Review]<:-[«Bean» ReviewBean]
+[«Table» Review]--[<note> The review model contains a description of a review for a website, an article, a product or some application]
