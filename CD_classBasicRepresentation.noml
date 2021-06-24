@@ -1,0 +1,5 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[<frame> Object |
+	[ Class| - attribute : int|+ operation(int) : void]
+	[ <instance> Object : Class ]
+]

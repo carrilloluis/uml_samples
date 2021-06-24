@@ -1,0 +1,10 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#Comment: Sample Generalization (Generalización-Especialización [es_PE])
+#Comment: General class
+[Teacher|name:String;lastName:String;docId:String;speciality:int|add();remove();update();report1()]
+#Comment: Specilizated class
+[WithContract:Teacher|startDate:Date;endContractDate:Date]
+[Ordinary:Teacher|yearsOfService:int]
+#Comment: Sub-classes (Specilizated class) 'is a'
+[Teacher]<:-[WithContract:Teacher]
+[Teacher]<:-[Ordinary:Teacher]

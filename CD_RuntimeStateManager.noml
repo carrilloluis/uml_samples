@@ -1,0 +1,5 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+#Comment: CLASS DIAGRAM Run Time State
+[<frame> RuntimeState |
+	[Manager : Employee| last_name:String="Smith";first_name:String="John";age:int=42|]
+]

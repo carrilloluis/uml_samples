@@ -1,0 +1,11 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[ <frame> object_Diagram |
+	[<instance>Morgan : Car]-[<instance>FrontLeft : Wheel]
+	[<instance>Morgan : Car]-[<instance>FrontRight : Wheel]
+	[<instance>Morgan : Car]-[<instance>Rear : Wheel]
+]
+
+[ <frame> Class_Diagram |
+	[Car]1 o- *[Wheel]
+]
