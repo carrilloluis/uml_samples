@@ -1,0 +1,8 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[<actor> DptoProgramación ]->[<usecase> Introducir datos]
+[ DptoProgramación ]->[<usecase> Imprimir]
+[<actor> Alumno ]->[<usecase> Imprimir]
+[<actor> Profesor ]->[<usecase> Imprimir]
+[ Profesor ]->[<usecase> Modificar]
+[ Profesor ]->[<usecase> Consultar]
+[ Profesor ]->[<usecase> Sacar estadísticas]

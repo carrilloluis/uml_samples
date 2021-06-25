@@ -1,0 +1,12 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[ModelView|color:String|create();setColor();setName();clear();select();existIntersection()]
+[Layout|color:String;name:String;type:integer|createLayout();paint();drawLine():void;drawPoint():void;drawPolyline():void;drawPolygon():void]
+[Point|x:Integer;y:Integer|]
+[Line|x1:Integer;y1:Integer;x2:Integer;y2:Integer|]
+[Polyline|xP:array\[ \];yP:array\[ \];points:int|paintPolyline();partialPaint()]
+[Polygon|xP:array\[ \];yP:array\[ \];points:int|partialPaint()]
+[Layout] --:> [ModelView]
+[Line] --:> [Layout]
+[Point] --:> [Layout]
+[Polyline] --:> [Layout]
+[Polygon] --:> [Layout]

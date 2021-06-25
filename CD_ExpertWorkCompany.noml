@@ -1,0 +1,10 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Person\[0..*\]|lName;fName\[1..*\];address\[1..*\]]
+[Expert\[0..*\]|competence\[1..*\]]
+[Work\[0..*\]|payment\[0..*\];expertise\[1..*\]]
+[Company\[0..*\]|cName;cLocation\[1..*\]|]
+[Person\[0..*\]]<:-[Expert\[0..*\]]
+#Comment: ExpertiseWork[0..*] >     < WorkExpertise
+[Expert\[0..*\]]0..* - [Work\[0..*\]]
+#Comment: WorkCompany >     < CompanyWork[0..*]
+[Work\[0..*\]]-[Company\[0..*\]]

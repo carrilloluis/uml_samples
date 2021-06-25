@@ -1,0 +1,13 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[<instance> : Course | name = "Intro to Computer Science"]
+[ : Course]-[<instance> Csc100a : Seminar|term = "Fall"]
+[ : Course]-[<instance> Csc100b : Seminar|term = "Spring"]
+#Comment: Won't listed
+[Csc100b : Seminar]- non+listed [<instance> EdMalorey : Student ]
+#Comment: teaching assistant' relation
+[Csc100b : Seminar]- student [<instance> ScottAmbler : Student]
+[Csc100b : Seminar]- teaching+assistant [<instance> SarahMcGrath : Student ]
+[Csc100a : Seminar]- teaching+assistant [ SarahMcGrath : Student ]
+[Csc100a : Seminar]- student [<instance> SallyJones : Student]
+#Comment: Regular student' relation
+[Csc100a : Seminar]- student [<instance> JohnSmith : Student]

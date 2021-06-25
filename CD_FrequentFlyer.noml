@@ -1,0 +1,6 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+#Comment: Association Class Diagram sample
+[Flight|flightNumber : Integer;departureTime : Date;flightDuration : Minutes= 60|delayFlight(numberOfMinutes : Minutes);getArrivalTime():Date]0..* / flights - [ <hidden> P]
+[ <hidden> P]- 0..*/passengers [FrequentFlyer|firstName : String;lastName : String;frequentFlyerNumber : String|]
+[ <hidden> P]--[MileageCredit|baseMiles : Integer;bonusMiles : Integer]
