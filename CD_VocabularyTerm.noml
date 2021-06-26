@@ -1,0 +1,13 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[<package> vdex |
+[Vocabulary|+profileType:\[0..1\];+vocabularyName:LanguageStringBag\[0..1\];vocabularyIdentifier:\[0..1\];+registrationStatus:\[0..1\];+orderSignificant:\[0..1\];+defaultLanguage:\[0..1\]|]
+[Term|+identifier;+caption:LanguageStringBag\[0..1\];+description:LanguageStringBag\[0..1\];+orderSignificant:\[0..1\];+validForIndexing:\[0..1\]|]+-> *[MediaDescriptor|+mediaLocation;+interpretationNote:LanguageStringBag\[0..1\]|]
+[Term]2 <- *[Relation|+relationType:VocabularyType\[0..1\]]
+[Term]1..* <-+ [Vocabulary]
+[Term]* <-[<hidden> P]
+[<hidden> P]-+[Term]
+[LanguageString|+language:\[0..1\];string:String|]1..* <-+ [LanguageStringBag||]
+[VocabularyType|+source;+value|]
+[RelationEndPoint|+termIdentifier;+vocabularyIdentifier:\[0..1\]]
+]

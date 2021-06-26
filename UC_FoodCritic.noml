@@ -1,0 +1,9 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[<actor> FoodCritic]
+[FoodCritic]-[<usecase> '  Payment for the meal ']
+[FoodCritic]-[<usecase> '  Taste food  ' ]
+[FoodCritic]-[<usecase> '  Drink wine  ' ]
+[<actor> Chef]
+[Chef]-[<usecase> '  Cook the meal  ' ]
+#Comment: TO-DO - al useCase into 'Restaurant (simplified)' border box
