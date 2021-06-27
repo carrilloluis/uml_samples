@@ -1,0 +1,11 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[PersonVO|- id;- name; - age; - phone|+ setId();+ getId(); setName();getName();setAge();getAge();setPhone;getPhone()]
+[PersonDAO||+ addPerson():void;+ requestPerson();+ listPeople():void]
+# Comment: javax.swing.Frame
+[main : Frame||main() : void ;+ setMenu();+ searchPerson()]
+[DbConnection|+ dbName; + user; + password; +  url;- connection|+DbConnection(); + getConnection(); +closeConnection() ]
+[PersonVO]-[PersonDAO]
+[PersonDAO]-[DbConnection]
+[PersonDAO]-[main : Frame]
+[main : Frame]-[PersonVO]

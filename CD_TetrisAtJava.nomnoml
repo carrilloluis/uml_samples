@@ -1,0 +1,9 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: model.score "package?"
+[«JavaClass» Ranking<ScoreType> ||+ranking();+addScore():void;+getWinner();+getSortedRanking():SortedSet<ScoreType>]gamePlays -> 0..* [«JavaClass» Score | # gamePlay : GamePlay ;-name:String;-score:int|+Score(String, GamePlay);+ toString():String;+ getName():String;+ getScoring():int;+ compareTo(Score):int;+ hashCode():int;+ equals(Object):boolean]
+[«JavaClass» TimeScore|+ TimeScore(String, GamePlay);+ getScoring():int]
+[«JavaClass» RowsClearedScore|+ RowsClearedScore(String, GamePlay); + getScoring():int]
+#Comment: model.exceptions && model.exceptions.score several
+[«JavaClass» TetrisException |+ TetrisException();+ getMessage():String|]<:-[«JavaClass» RankingException|+ RankingException();+ getMessage():String ]
+[«JavaClass» Score]<:-[«JavaClass» TimeScore]
+[«JavaClass» Score]<:-[«JavaClass» RowsClearedScore]
