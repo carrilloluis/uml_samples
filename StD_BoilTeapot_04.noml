@@ -1,0 +1,8 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: old "yUML.me" notation : start-akettle%2520empty-Fill%2520Kettle-Boil%2520Kettleakett
+#direction: right
+[<start> start]->[<choice> ]
+[<choice> ]KettleEmpty ->[<state> Fill kettle]
+[<choice> ]KettleFull ->[<state> Boil kettle]
+[<state> Fill kettle]->[<state> Boil kettle]
+[<state> Boil kettle]->[<end> end]

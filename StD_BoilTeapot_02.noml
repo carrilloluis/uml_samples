@@ -1,0 +1,4 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: old "yUML.me" notation : start-fillFill%20Kettle-end
+[<start> start]fill ->[<state> Fill kettle]
+[<state> Fill kettle]->[<end> end]

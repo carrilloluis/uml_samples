@@ -1,0 +1,14 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: old "yUML.me" notation : start-akettle%2520empty-Fill%2520Kettle-bakettle%2520full-b-
+#direction: right
+[<start> start]->[<choice> ?]
+[<choice> ?]KettleEmpty ->[<state> Fill kettle]
+[<choice> ?]KettleFull ->[<sync> sync]
+[<state> Fill kettle]->[<sync> sync]
+[<sync> sync]->[<state> Boil kettle]
+[<sync> sync]->[<state> Add tea bag]
+[<state> Add tea bag]->[<state> Add milk]
+[<state> Boil kettle]->[<sync> sync2]
+[<state> Add milk]->[<sync> sync2]
+[<sync> sync2]->[<state> Pour water]
+[<state> Pour water]->[<end> end]

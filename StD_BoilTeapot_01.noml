@@ -1,0 +1,5 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#Comment: old "yUML.me" notation : start-Boil%20Kettle-end
+[<start> start]->[<state> boil kettle]
+[<state> boil kettle]->[<end> end]
+#Comment: Why 'end' symbol has not filled inner circle?
