@@ -1,0 +1,2 @@
+#Comment: _author_ = Luis/Carrillo/Gutiérrez
+[CSinglenton|uniqueInstance : CSinglenton| - CSinglenton();+ static getInstance() : CSinglenton]

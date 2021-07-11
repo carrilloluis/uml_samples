@@ -1,0 +1,19 @@
+#Comment: __author__ = Luis/Carrillo/Gutiérrez
+[Document|name:String|classify();retrieve();goToRepository():void;destroyFromRepository():void]
+[Index|name:String|showEntry(i:int);deleteEntry():void;appendEntry()]
+[User||getRequest():void;printMsg():void]
+[SystemApp||processRequest(u:User):void]
+
+[<frame> Login |
+	[User]-[SystemApp]
+]
+
+[<frame> AppContains |
+	[SystemApp]-[Document]
+	[SystemApp]-[Index]
+]
+
+[<frame> SearchBy |
+	[Document]-[Index]
+	[Index]-[Document]
+]

@@ -1,0 +1,2 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Loan Account|type : String;accountName : String;dateReleased : Date;loanAmount : Number|renew();extend()]

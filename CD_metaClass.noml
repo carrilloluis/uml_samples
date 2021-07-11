@@ -1,0 +1,10 @@
+#Comment: _transcripter_ = Luis/Carrillo/Gutiérrez
+#direction: right
+[«metaclass» Class|name:String; isAbstract:boolean = False|]
+[«metaclass» Class]-[«metaclass» Property||]
+[«metaclass» Class] ownedRule -[«metaclass» Constraint|name = 'Rule']
+[«metaclass» Class] ownedAttribute -[<instance> a: Property| name = 'Code']
+[«metaclass» Class] ownedAttribute -[<instance> b: Property| name = 'Level']
+[«metaclass» Class] ownedAttribute -[<instance> c: Property| name = 'Classificable']
+[«metaclass» Class] ownedAttribute -[<instance> d: Property| name = 'Replaced']
+[«metaclass» Class] ownedOperation -[«metaclass» Operation|name = 'Co-required']

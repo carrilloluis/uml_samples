@@ -1,0 +1,18 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[Account|#name : String; #emailAddress : String|+getName():String;+setName(String):void; +getEmailAddress():String;+setEmailAddress(String):void]
+[AddressBook|#name : String|+getName():String;+setName(String):void; +getContacts():Contact;+getContacts():Contact\[\];+insertContact(Contact):void]
+[Account]1 o- 0..*[AddressBook]
+#Comment: [Account]+isAccessedBy o- #uses[AddressBook]
+[ContactGroup|#name : String|+getname() : String; +setName(String):void]
+[AddressBook]1 +- 0..* {Ordered} [ContactGroup]
+#Comment: -isContainedIn +- +Contains
+#Comment: [AddressBook]isContainedIn +- Contains[ContactGroup]
+[ContactGroup]1 o- 0..*[ContactGroup]
+#Comment: +child -o #parent
+#Comment: [ContactGroup]child -o parent[ContactGroup]
+[Contact|# name : String; # primaryContactMethod : String; # emailAddress : String; # faxNumber : String|+getName():String;+setName(String):void; +getPrimaryContactMethod():String;+setPrimaryContactMethod(String):void;+getEmailAddress():String;+setEmailAddress(String):void;+getFaxNumber():String;+setFaxNumber(String):void]
+#Comment: +isContainedIn +- -contains
+[AddressBook]+- 0..*[Contact]
+#Comment: +groupedBy o- #contains
+[ContactGroup]0..* o- 0..*[Contact]

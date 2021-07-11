@@ -1,0 +1,9 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[<actor> Student]->[<usecase> Consult/Check eMailBox]
+[<actor> Student]->[<usecase> Writing email]
+[<actor> Student]->[<usecase> Delete email]
+[<actor> Student]->[<usecase> Receive email]
+[<actor> Student]->[<usecase> Forward email]
+[<usecase> Send email] «Extends» ->[<usecase> Writing email]
+[<usecase> Send email] «Extends» ->[<usecase> Forward email]
