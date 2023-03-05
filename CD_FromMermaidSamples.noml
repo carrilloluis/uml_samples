@@ -1,0 +1,23 @@
+#comment: classDiagram
+#comment: Class01 <|-- AveryLongClass : Cool
+#comment: Class01 : size()
+#comment: Class01 : int chimp
+#comment: Class01 : int gorilla
+#comment: Doesn't fill the triangle like mermaid
+[Class01|int chimp;int gorilla|size()]<:- Cool [AveryLongClass||]
+#comment: Class03 *-- Class04
+[Class03||]+-[Class04||]
+#comment: Class05 o-- Class06
+[Class05||]o-[Class06||]
+#comment: Class09 --* C3
+[Class09||]-+[C3||]
+#comment: Class07 .. Class08
+#comment: Class07 : equals()
+#comment: Class07 : Object[] elementData
+[Class07|Object\[\] elementData|equals()]-[Class08||]
+#comment: Class09 --> C2 : Where am i?
+[Class09||]Where am I? ->[C2||]
+#comment: Class09 --|> Class07
+[Class09||]-:>[Class07]
+#comment: Class08 <--> C2: Cool label
+[Class08||]Cool label <->[C2||]
