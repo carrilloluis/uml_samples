@@ -1,0 +1,2 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[WebSocketUser|+socket:socket;+id:int|+__construct(id, socket)]0..n -o 1[WebSocketServer|+users:array;+sockets:array;+master:socket|+__construct(IP, port);+run()]

@@ -1,0 +1,8 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[«interface» Figura]<:--[Cuadrado]
+[«interface» Figura]<:--[Círculo]
+[«interface» Figura]<:--[Rectángulo]
+[«interface» Figura]<--[TestInterface]
+[Cuadrado]<--[TestInterface]
+[Círculo]<--[TestInterface]
+[Rectángulo]<--[TestInterface]
