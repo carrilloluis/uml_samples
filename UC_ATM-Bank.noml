@@ -1,0 +1,14 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[<actor> Customer]-[<usecase> Check Balances]
+[<actor> Customer]-[<usecase> Deposit Funds]
+[<actor> Customer]-[<usecase> Withdraw Cash]
+[<actor> Customer]-[<usecase> Transfer Funds]
+[<actor> Technician]-[<usecase> Maintenance]
+[<actor> Technician]-[<usecase> Repair]
+[<usecase> Check Balances]-[<actor> Bank]
+[<usecase> Deposit Funds]-[<actor> Bank]
+[<usecase> Withdraw Cash]-[<actor> Bank]
+[<usecase> Transfer Funds]-[<actor> Bank]
+[<usecase> Maintenance]-[<actor> Bank]
+[<usecase> Repair]-[<actor> Bank]
