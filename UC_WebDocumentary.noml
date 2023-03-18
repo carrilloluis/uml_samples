@@ -1,0 +1,14 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#direction: right
+[<actor> Site User]-[<usecase> Search Docs - Full Text]
+[<usecase> Search Docs - Full Text] «Include» -->[<usecase> Download Docs]
+[<actor> Site User]-[<usecase> Browse Docs]
+[<usecase> Browse Docs] «Include» -->[<usecase> Preview Doc]
+[<usecase> Search Docs - Full Text] «Include»-->[<usecase> Preview Doc]
+[<actor> Site User]-[<usecase> View Events]
+
+[<actor> Webmaster]-[<usecase> Upload Docs]
+[<usecase> Upload Docs]<-- «Extend» [<usecase> Manage Folders]
+[<actor> Webmaster]-[<usecase> Post New Event to Homepage]
+[<actor> Webmaster]-[<usecase> Add User]
+[<usecase> Add User]<-- «Extend» [<usecase> Add Company]
