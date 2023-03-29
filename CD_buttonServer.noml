@@ -1,0 +1,6 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Button||]+-[ButtonServer||+ButtonPressed()]
+[ButtonServer]<:-[SendButtonAdapter||]
+[ButtonServer]<:-[DigitButtonAdapter||]
+[SendButtonAdapter]->[Dialer||]
+[DigitButtonAdapter]->[Dialer]

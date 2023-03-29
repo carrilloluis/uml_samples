@@ -1,0 +1,7 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Studio]-> 1[«interface» Playable|+play();+pause();+resume();+stop()]
+#comment: [<label> -player]-[«interface» Playable]
+[StreamPlayer]--:>[«interface» Playable]
+[CDPlayer]--:>[«interface» Playable]
+[«interface» Recordable|+record(flag:Boolean)]-:>[«interface» Playable]
+[TapeRecorder|+play(fileName:String);+pause();+resume();+stop();+record(flag:Boolean)]--:>[«interface» Recordable]

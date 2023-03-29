@@ -1,0 +1,5 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+#comment: Difference class and interface in J4v4
+[«interface» GeometricObject||+getPerimeter():double;+getArea():double]<:--[Circle|#radius:double = 1.0|+Circle(radius:double);+getPerimeter():double;+getArea():double]
+[«interface» Resizable||+resize(percent:int)]<:--[ResizableCircle||+ResizableCircle(radius:double);+resize(percent:int)]
+[Circle]<:-[ResizableCircle]

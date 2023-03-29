@@ -1,0 +1,8 @@
+#Comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[«interface» Actor|]<:--[<abstract> «abstract» Persona|]
+[<abstract> «abstract» Persona]<:-[Profesor|]
+[<abstract> «abstract» Persona]<:-[Estudiante|]
+[«interface» ObjetoInerte|]<:--[Vehículo|]
+[«interface» Actor|]<:--[Vehículo]
+[Vehículo]<:-[Coche|]
+[Vehículo]<:-[Bicicleta|]
