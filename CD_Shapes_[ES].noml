@@ -1,0 +1,10 @@
+#comment: transcripter= Luis/Carrillo/Gutiérrez
+[<abstract> «abstract» Figura|-numLados:int|+getArea():double;+getPerimetro():double]
+#comment: contiene
+[<abstract> «abstract» Figura]1 <-o 0..n[Workspace|-nombre:String;-límiteFiguras:int|+agregarFigura(Figura):boolean;+eliminarFigura(Figura):boolean;+estaRelleno():boolean;+getAreaTotal():double;+getApotemaTotal():double;+cambiarFigura(Figura, Figura):void]
+#comment: Extends
+[<abstract> «abstract» Figura]<:-[Cuadrado|-lado:int|]
+#comment: Extends
+[<abstract> «abstract» Figura]<:-[Triángulo|-base:int;-altura:int;-hipotenusa:int|]
+#comment: Extends
+[<abstract> «abstract» Figura]<:-[Hexágono|-radio:double|+getApotema():double]
