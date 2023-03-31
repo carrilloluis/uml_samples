@@ -1,0 +1,4 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Animal||+comer()]<:-[Mamífero|#pelaje|]
+[Mamífero]<:-[Humano||+conversar()]
+[Mamífero]<:-[Gatos||+maullar()]

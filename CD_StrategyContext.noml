@@ -1,0 +1,5 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Context|+some_method():void]strategy o-[«interface» Strategy|+Behavior()]
+[«interface» Strategy]<:-[<hidden> P]
+[<hidden> P]-[StrategyA|+Behavior()]
+[<hidden> P]-[StrategyB|+Behavior()]

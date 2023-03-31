@@ -1,0 +1,2 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Professor|+listOfStudents:list|]1 o- 1..*[Class|+Students:list|]
