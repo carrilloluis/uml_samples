@@ -1,0 +1,6 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Component||+operation()]<:-[<hidden> P]
+[Decorator|-component|+operation()]<:-[ConcreteDecorator||+operation()]
+[<hidden> P]-[ConcreteComponent||+operation()]
+[<hidden> P]-[Decorator]
+[Component]-o[Decorator]
