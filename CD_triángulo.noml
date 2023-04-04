@@ -1,0 +1,3 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Triángulo|-double base;-double altura;-double área|+ Triángulo();-void calcularArea();+double getBase();+double getAltura();+double getArea();+void setBase(double value);+void setAltura(double value);+void setArea(double value)]
+[Triángulo]<--[Principal||+void main(String\[\] args)]
