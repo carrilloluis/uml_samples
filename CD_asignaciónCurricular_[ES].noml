@@ -1,0 +1,6 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Materia|-nombre;-clave_curso;-módulo;-programa|]n -o 1[Programa|-clave_curso;-nombre;-duración;-costo;-aula_asignada|+sancionar_alumnos();+cancelar_curso()]
+[Programa]1 o- n[Profesor|-clave_profesor;-nombre;-apellido;-especialidad;-cargo|+dictar_clases();+calificar_exámenes()]
+[Alumno|-clave_alumno;-nombre;-apellido;-número_creditos|+pagar();+retirarse();+aplazar()]
+[«interface» Materia_Alumno|-materia_alumno|+guardar();+eliminar()]<:--[Materia]
+[«interface» Materia_Alumno]<:--[Alumno]
