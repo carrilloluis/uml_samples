@@ -1,0 +1,11 @@
+@startuml
+	class User {
+		+Forename
+		+Surname
+		+HashedPassword
+		-Salt // Salario
+
+		+Login();
+		+Logout();
+	}
+@enduml
