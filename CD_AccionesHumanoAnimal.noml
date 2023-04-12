@@ -1,0 +1,9 @@
+#comment: __transcripter__=Luis/Carrillo/Gutiérrez
+[«interface» AccionesGenerales||+hablar();+desplazarse();+jugar();+alimentarse();+dormir()]
+[«interface» AccionesGenerales]<:--[Humano]
+[«interface» AccionesGenerales]<:--[Animal]
+[Humano||]<:-[Hombre||]
+[Humano]<:-[Mujer||]
+[«interface» AccionesHumano||+bailar();+tocarInstrumentos();+estudiar();+trabajar()]<:--[Humano]
+[Animal||]<:-[Perro||]
+[Animal]<:-[Gato||]
