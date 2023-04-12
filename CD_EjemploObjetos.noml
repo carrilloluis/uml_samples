@@ -1,0 +1,6 @@
+#comment: __transcripter__=Luis/Carrillo/Gutiérrez
+#comment: Diagrama de Clase / Ejemplos
+[Persona|nombrePersona;primerApellido;segundoApellido;fechaNacimiento]
+[Dirección|calle:String;localidad:String\[0..1\];provincia:String\[0..1\]='Zaragoza';CP:String]
+[Libro|+título:String\[0..1\];+autor:String\[0..*\];+fechaPublicación:date]
+[Producto|#id:Float;+nombre:String;+precio:Float]
