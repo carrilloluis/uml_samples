@@ -1,0 +1,11 @@
+#comment: __transcripter_=Luis/Carrillo/Gutiérrez
+[CCuentaBancaria|+NroCuenta:String;+Titular:CPersona;+Ciudad:String;+Movimiento:CLista|+Deposito():void;+Retiro():void;+Saldo():void;+SumarCargoAbono(oMov:CLista):void;+MostrarSaldo():void;+MostrarMovimiento():void;+MuestraMovimiento(oMov:CLista;i:int):void]
+[CLista|+Elemento:Object;+SubLista:CLista|+EsVacía:bool;+Longitud():int;+Iesimo(Posición:int):Object;+Eliminar(Posición:int):void;+Insertar(pElemento:Object,Posición:int):void;+Ubicación(pElemento:Object):int;+ExisteElemento(pElemento:Object):bool;+Agregar():void;+Listar():void]
+[CPersona|+DNI:String;+Nombre:String;+Dirección:String|+Leer():void;+Mostrar():void;+Escribir():void]
+[CMovimiento|+Fecha:CFecha;+Documento:String;-aAbono:double;-aCargo:double|+LeerAbono():void;+LeerCargo():void;+Saldo():double]
+[CFecha|-aDía:int;-aMes:int;-aAnio:int|+Leer():void;+NroDiasMes(pMes:int,pAnio:int):int;+Bisiesto(pAnio:int):bool;+EsFechaVálida(pDía:int,pMes:int,pAnio:int):bool;+ToString():String]
+[CPersona]<--[CCuentaBancaria]
+[CLista]->[CLista]
+[CCuentaBancaria]-->[CLista]
+[CMovimiento]-->[CFecha]
+[CCuentaBancaria]1 +-> 1..*[CMovimiento]
