@@ -1,0 +1,10 @@
+#comment: __transcripter__=Luis/Carrillo/Gutiérrez
+#comment: version of Conceptual Model
+[User|name;login;password;email]o-[Profile|administrator;operator;supervisor|]
+[Order||]o-[Client|name;ID;address;contacts|]
+[Order]o-[User]
+[Order]o-[OrderItem|amount;price;discount|]
+[Order]o-[Payment|description|]
+[OrderItem]o-[Product|description;price;stock]
+[Order]o-[History|date;user;description|]
+[Order]o-[Status|performed;backorder;completed|]
