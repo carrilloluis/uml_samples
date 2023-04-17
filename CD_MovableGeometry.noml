@@ -1,0 +1,9 @@
+#comment: __transcripter_=Luis/Carrillo/Gutiérrez
+#direction: right
+[«interface» Movable||+moveUp():void;+moveDown():void;+moveLeft():void;+moveRight():void]
+[MovablePoint|~x:int;~y:int;~xSpeed:int;~ySpeed:int|+MovablePoint(x:int,y:int,xSpeed:int,ySpeed:int);+toString():String;+moveUp():void;+moveDown():void;+moveLeft():void;+moveRight():void]
+[MovableCircle|-radius:int;-center:MovablePoint|+MovableCircle(x:int,y:int,xSpeed:int,ySpeed:int,radius:int);+toString():String;+moveUp():void;+moveDown():void;+moveLeft():void;+moveRight():void]
+[«interface» Movable]<:--[<hidden> P]
+[<hidden> P]--[MovableCircle]
+[<hidden> P]--[MovablePoint]
+[MovablePoint]1 -o[MovableCircle]
