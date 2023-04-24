@@ -1,0 +1,28 @@
+#comment: __transcripter__ = Luis/Carrillo/Gutiérrez
+[Diagrama]<:-[<hidden> P]
+[<hidden> P]-[Diagrama_de_Estructura]
+[<hidden> P]-[Diagrama_de_Comportamiento]
+
+[Diagrama_de_Estructura]<:-[<hidden> P1]
+[<hidden> P1]-[Diagrama_de_Clases]
+[<hidden> P1]-[Diagrama_de_Componentes]
+[<hidden> P1]-[Diagrama_de_Objetos]
+#comment: Diagrama_de_Composición ?? 
+[<hidden> P1]-[Diagrama_de_Composición]
+[<hidden> P1]-[Diagrama_de_Estructura_Compuesta]
+[<hidden> P1]-[Diagrama_de_Despliegue]
+[<hidden> P1]-[Diagrama_de_Paquetes]
+
+[Diagrama_de_Comportamiento]<:-[<hidden> P2]
+[<hidden> P2]-[Diagrama_de_Actividad]
+[<hidden> P2]-[Diagrama_de_Casos_de_Uso]
+[<hidden> P2]-[Diagrama_de_Máquina_de_Estado]
+[<hidden> P2]-[Diagrama_de_Interacción]
+
+[Diagrama_de_Interacción]<:-[<hidden> P3]
+[<hidden> P3]-[Diagrama_de_Secuencia]
+[<hidden> P3]-[Diagrama_de_Comunicación]
+[<hidden> P3]-[Diagrama_de_Tiempos]
+[<hidden> P3]-[Diagrama_Global_de_Interacción]
+#comment: Diagrama_de_Ciclo_de_Vida ??
+[<hidden> P3]-[Diagrama_de_Ciclo_de_Vida]
