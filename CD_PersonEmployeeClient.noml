@@ -1,0 +1,6 @@
+#comment: __transcripter__=Luis/Carrillo/Gutiérrez
+#comment: class Person { String Name; }
+#comment: class Employee extends Person {}
+[Person|Name:String]<:-[Employee]
+#comment: class Client extends Person {}
+[Person]<:-[Client]
