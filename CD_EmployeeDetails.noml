@@ -1,0 +1,25 @@
+#comment: com.employee CA, F, A, C(onstructor)
+#comment: all packages on com.employee
+#comment: [EmploymentType]0..1 <- +employmentType [Employee]
+[«Java Class» EmploymentType|employmentType:String;workTime:WorkTime|
+	EmploymentType(String, WorkTime);
+	EmploymentType(String);getEmploymentType():String;
+	getWorkTime():WorkTime;setWorkTime(WorkTime):void;
+	getHourlyPay():double;toString():String]<-
+[«Java Class» Employee|id:int;name:String;emailId:String|
+	Employee(int, String, String, EmploymentType, WorkLocation);
+	Employee(int, String, String, EmploymentType);
+	getName():String;
+	getId():int;
+	getEmail():String;
+	getEmploymentType():EmploymentType;
+	getWorkLocation():WorkLocation;
+	setWorkLocation(WorkLocation):void;
+	getEmailId():String;
+	toString():String
+]
+[«Java Class» Employee]<:-[«Java Class» EmployeeDefault||EmployeeDefault(int,String,String,EmploymentType,WorkLocation);EmployeeDefault(int,String,String,EmploymentType)]
+[«Java Class» WorkLocation|workLocation:String|WorkLocation(String);getWorkLocation():String;setWorkLocation(String):void]
+#comment: [WorkLocation]0..1 <- +workLocation [Employee]
+[«Java Class» WorkLocation]<-[«Java Class» Employee]
+
