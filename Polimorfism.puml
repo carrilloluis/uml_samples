@@ -1,0 +1,27 @@
+@startuml
+	' Luis Carrillo Gutiérrez - luis.carrillo@unap.edu.pe
+
+	skin rose
+	
+	Interface IAnimal {
+		+valor = 5
+		+void comunicarse()
+	}
+	Abstract class Animal {
+		+nombre
+		+void animal()
+		+void tipoAnimal()
+		+getNombre()
+	}
+	class Gato {
+		+void gato(String)
+	}
+	class Perro {
+		+void perro(String) 
+	}
+	
+	IAnimal <|.. Animal
+	Animal <|-- Gato
+	Animal <|-- Perro
+
+@enduml
