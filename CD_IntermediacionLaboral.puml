@@ -1,0 +1,62 @@
+@startuml
+
+	'Luis Carrillo Gutiérrez - luis.carrillo@unap.edu.pe
+	
+	skin rose
+
+	title Agencia de Empleos [Intermediación Laboral]
+
+	class Profesional {
+		-Int DNI
+		-String Nombre
+		-String Apellidos
+		-String Dirección
+		-String Clave
+	}
+	class Sistema {
+		-Long cuota_Alta
+		-Int tarifa_Oferta
+		-Int tarifa_Difusión
+		
+		+void introducir_Perfil()
+		+void consultar_Perfil()
+		+cancelar_Perfil()
+		+introducir_Oferta()
+		+difundir_Oferta()
+		+alta()
+		+identificar()
+	}
+	class Banco {
+		+void cargar()
+	}
+	class Oferta {
+		-ocupación
+		-formación
+		-experiencia
+	}
+	class Perfil {
+		-ocupación
+		-formación
+		-experiencia
+		
+		+void consultar()
+		+void cancelar()
+	}
+	class Empresa {
+		-CIF
+		-nombre
+		-persona_Contacto
+		-dirección_Contacto
+		-cuenta_Corriente
+	}
+	
+	Profesional - Sistema : accede
+	Sistema -- Empresa : accede
+	Sistema -- Banco : accede
+	Empresa -- Oferta : realiza
+	Oferta -- Perfil : selecciona
+	Perfil -- Profesional : posee
+	Sistema o-up- Oferta
+	Sistema o-up- Perfil
+
+@enduml
